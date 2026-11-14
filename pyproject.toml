@@ -20,7 +20,7 @@ dependencies = [
 dev = ["pytest", "ruff"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["charts"]
+packages = ["chart_functions"]
 
 [tool.hatch.build.targets.wheel.sources]
-"charts" = "aht_chart_library"
+"chart_functions" = "aht_chart_library"
