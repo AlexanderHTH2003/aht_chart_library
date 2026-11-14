@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aht_chart_library"
+version = "0.1.0"
+description = "Reusable interactive Plotly chart builders analysis of features"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Alexander"},
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
