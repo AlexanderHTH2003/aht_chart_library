@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -227,5 +228,16 @@ def aht_line_chart(
                 ],
             )
         )
+
+    fig.update_layout(
+        template=plotly_template,
+        font=dict(family="Times New Roman", size=12),
+        hovermode="closest",
+        hoverlabel=dict(
+            bordercolor="#334155",
+        ),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, title_text=""),
+    )
+    
     return fig
 
