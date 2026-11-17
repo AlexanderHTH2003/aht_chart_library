@@ -13,7 +13,9 @@ authors = [
 ]
 dependencies = [
     "pandas>=2.0.0",
+    "numpy>=1.26.0",
     "plotly>=5.18",
+    "statsmodels>=0.14.0",
 ]
 
 [project.optional-dependencies]
